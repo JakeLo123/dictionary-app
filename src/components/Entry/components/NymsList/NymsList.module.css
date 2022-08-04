@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+.root > p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.listLabel {
+  margin-right: 14px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+.list > li:not(:last-of-type) {
+  margin-right: 14px;
+  position: relative;
+}
+.list > li:not(:last-of-type)::after {
+  content: '·';
+  font-weight: bold;
+  position: absolute;
+  right: -9px;
+}
